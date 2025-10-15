@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Surface Pro 11 Volume Distribution (Heat Map)</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%231a1a1a' stroke='%23ffffff' stroke-width='4'/%3E%3C/svg%3E" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; overflow: hidden; background: #1a1a1a; color: #fff; }
+    #canvas-container { width: 100vw; height: 100vh; position: relative; }
+    #loading { position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(30,30,30,0.95); display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 1000; }
+    #loading h2 { margin-bottom: 20px; }
+    .progress-container { width: 300px; height: 24px; background: #222; border-radius: 12px; overflow: hidden; margin-bottom: 10px; }
+    .progress-bar { height: 100%; background: #4CAF50; width: 0%; color: #fff; text-align: center; line-height: 24px; font-weight: bold; transition: width 0.3s; }
+    #loading-status { margin-bottom: 10px; color: #ccc; }
+
+    /* GUI restyle (lil-gui) */
+    .lil-gui.root {
+      --background-color: rgba(20, 20, 20, 0.92);
+      --text-color: #e7e7e7;
+      --title-background-color: rgba(34, 34, 34, 0.95);
+      --title-text-color: #f0f0f0;
+      --widget-color: #2c2c2c;
+      --hover-color: #3a3a3a;
+      --focus-color: #222;
+      --number-color: #c6e48b;
+      --string-color: #ffd166;
+      --color-input-1: #2ecc71;
+      --color-input-2: #f1c40f;
+      --color-input-3: #e74c3c;
+      backdrop-filter: blur(4px);
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+    }
+    .lil-gui .title {
+      font-weight: 600;
+      letter-spacing: 0.2px;
+    }
+    .lil-gui .controller:hover {
+      background: var(--hover-color);
+    }
+    .lil-gui .lil-gui .children {
+      border-left: 1px dashed rgba(255,255,255,0.06);
+    }
+    .lil-gui .controller input[type="text"],
+    .lil-gui .controller input[type="number"],
+    .lil-gui .controller select {
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(0,0,0,0.25);
+      color: #e7e7e7;
+    }
+    .lil-gui .controller .name {
+      opacity: 0.9;
+    }
+    .lil-gui .controller[title] {
+      cursor: help;
+    }
+  </style>
+</head>
+<body>
+  <div id="canvas-container"></div>
+    
+    <!-- Legacy log/status panels removed; logging is handled via lil-gui in viewer.js -->
+  <div id="loading">
+    <h2>Loading GLB Models...</h2>
+    <div class="progress-container">
+      <div class="progress-bar" id="progress-bar">0%</div>
+    </div>
+    <p id="loading-status">Initializing...</p>
+  </div>
+  <script type="module" src="viewer.js"></script>
+</body>
+</html>

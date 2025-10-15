@@ -1,0 +1,23 @@
+{
+  "battery": "battery_100.glb",
+  "chip1": "chip1_50.glb",
+  "chip2": "chip2_50.glb",
+  "chip3": "chip3_05.glb",
+  "chip4": "chip4_05.glb",
+  "chip5": "chip5_100.glb",
+  "chip6": "chip6_100.glb",
+  "display": "display.glb",
+  "enclusure": "enclusure_100.glb",
+  "pcb_base": "pcb_base_100.glb",
+  "pcb_front": "pcb_front_100.glb",
+  "section1": "section1_100.glb",
+  "section2": "section2_100.glb",
+  "section3": "section3_100.glb",
+  "section4": "section4_100.glb",
+  "section5": "section5_100.glb",
+  "section6": "section6_100.glb",
+  "thermal_pipe1": "thermal_pipe1_100.glb",
+  "thermal_pipe2": "thermal_pipe2_100.glb",
+  "thermal_speaker": "thermal_speaker_100.glb",
+  "thermal_together": "thermal_together_100.glb"
+}

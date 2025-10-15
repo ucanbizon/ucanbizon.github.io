@@ -1,0 +1,23 @@
+{
+  "battery": { "100": "battery_100.glb", "50": "battery_50.glb", "20": "battery_20.glb", "10": "battery_10.glb" },
+  "chip1": { "50": "chip1_50.glb", "20": "chip1_20.glb", "10": "chip1_10.glb", "5": "chip1_05.glb" },
+  "chip2": { "50": "chip2_50.glb", "20": "chip2_20.glb", "10": "chip2_10.glb", "5": "chip2_05.glb" },
+  "chip3": { "5": "chip3_05.glb", "2": "chip3_02.glb", "1": "chip3_01.glb" },
+  "chip4": { "5": "chip4_05.glb", "2": "chip4_02.glb", "1": "chip4_01.glb" },
+  "chip5": { "100": "chip5_100.glb", "50": "chip5_50.glb", "20": "chip5_20.glb", "10": "chip5_10.glb" },
+  "chip6": { "100": "chip6_100.glb", "50": "chip6_50.glb", "20": "chip6_20.glb", "10": "chip6_10.glb" },
+  "display": { "100": "display.glb" },
+  "enclusure": { "100": "enclusure_100.glb", "50": "enclusure_50.glb", "20": "enclusure_20.glb" },
+  "pcb_base": { "100": "pcb_base_100.glb", "50": "pcb_base_50.glb", "20": "pcb_base_20.glb", "10": "pcb_base_10.glb" },
+  "pcb_front": { "100": "pcb_front_100.glb", "50": "pcb_front_50.glb", "20": "pcb_front_20.glb", "10": "pcb_front_10.glb" },
+  "section1": { "100": "section1_100.glb", "50": "section1_50.glb", "20": "section1_20.glb", "10": "section1_10.glb", "5": "section1_05.glb" },
+  "section2": { "100": "section2_100.glb", "50": "section2_50.glb", "20": "section2_20.glb", "10": "section2_10.glb" },
+  "section3": { "100": "section3_100.glb", "50": "section3_50.glb", "20": "section3_20.glb", "10": "section3_10.glb", "5": "section3_05.glb" },
+  "section4": { "100": "section4_100.glb", "50": "section4_50.glb", "20": "section4_20.glb", "10": "section4_10.glb", "5": "section4_05.glb" },
+  "section5": { "100": "section5_100.glb", "50": "section5_50.glb", "20": "section5_20.glb", "10": "section5_10.glb", "5": "section5_05.glb" },
+  "section6": { "100": "section6_100.glb", "50": "section6_50.glb", "20": "section6_20.glb", "10": "section6_10.glb", "5": "section6_05.glb" },
+  "thermal_pipe1": { "100": "thermal_pipe1_100.glb", "50": "thermal_pipe1_50.glb", "20": "thermal_pipe1_20.glb", "10": "thermal_pipe1_10.glb" },
+  "thermal_pipe2": { "100": "thermal_pipe2_100.glb", "50": "thermal_pipe2_50.glb", "20": "thermal_pipe2_20.glb", "10": "thermal_pipe2_10.glb" },
+  "thermal_speaker": { "100": "thermal_speaker_100.glb", "50": "thermal_speaker_50.glb", "20": "thermal_speaker_20.glb", "10": "thermal_speaker_10.glb" },
+  "thermal_together": { "100": "thermal_together_100.glb", "50": "thermal_together_50.glb", "20": "thermal_together_20.glb", "10": "thermal_together_10.glb" }
+}
